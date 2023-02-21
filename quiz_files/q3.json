@@ -1,0 +1,66 @@
+[
+	{
+        "question": "The config file named nextflow.config in the current directory has the top priority for the parameter settings in Nextflow",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Yes",
+                "correct": false,
+                "feedback": "Incorrect"
+            },
+            {
+                "answer": "No",
+                "correct": true,
+                "feedback": "Correct"
+            }
+        ]
+    },
+    {
+        "question": "Does nf-core/methylseq use bismark as a step or multiple steps in the pipeline?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "No",
+                "correct": false,
+                "feedback": "Incorrect"
+            },
+            {
+                "answer": "Yes",
+                "correct": true,
+                "feedback": "Correct"
+            }
+        ]
+    },
+    {
+        "question": "Which of below has the top priority in Nextflow parameter settings?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Config file specified using the -c my_config option",
+                "correct": false,
+                "feedback": "Incorrect"
+            },
+            {
+                "answer": "The config file named nextflow.config in the workflow project directory",
+                "correct": false,
+                "feedback": "Incorrect"
+            },
+            {
+                "answer": "Parameters specified on the command line (--something value)",
+                "correct": true,
+                "feedback": "Correct"
+            },
+            {
+                "answer": "Parameters provided using the -params-file option",
+                "correct": false,
+                "feedback": "Incorrect"
+            },
+            {
+                "answer": "The config file named nextflow.config in the workflow project directory",
+                "correct": false,
+                "feedback": "Incorrect"
+            }
+            
+        ]
+    }
+]

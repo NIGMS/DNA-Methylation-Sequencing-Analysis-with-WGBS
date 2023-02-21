@@ -1,0 +1,22 @@
+[
+    {
+        "front": "WGBS",
+        "back": "Whole-genome bisulfite sequencing, also called bisulfite sequencing (Bisulfite-Seq or BS-Seq). It combines bisulfite treatment with next-generation sequencing (NGS) for epigenetic analysis of the methylome of nearly any organism with single-base resolution."
+    },
+    {
+        "front": "Bismark",
+        "back": "Bismark is a program to map bisulfite treated sequencing reads to a genome of interest and perform methylation calls."
+    },
+    {
+        "front": "FastQC",
+        "back": "FastQC is used to quality control checks on raw sequence data coming from high throughput sequencing pipelines."
+    },
+    {
+        "front": "Trim Galore!",
+        "back": "Trim Galore is a wrapper around Cutadapt and FastQC to consistently apply adapter and quality trimming to FastQ files, with extra functionality for RRBS data."
+    },
+    {
+        "front": "IGV",
+        "back": "The Integrative Genomics Viewer (IGV) is an interactive tool for the visual exploration of genomic data. It supports flexible integration of all the common types of genomic data and metadata. IGV supports many different file formats, such as .bam, .bed, GFF/GTF, .fasta."
+    }
+]

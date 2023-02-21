@@ -1,0 +1,36 @@
+[
+	{
+        "question": "DMRs can be a single CpG site",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "No",
+                "correct": false,
+                "feedback": "Incorrect"
+            },
+            {
+                "answer": "Yes",
+                "correct": true,
+                "feedback": "Correct"
+            }
+        ]
+    },
+    {
+        "question": "How many de novo DMRs with p<0.05 were detected in the example dataset?",
+        "type": "numeric",
+        "answers": [
+            {
+                "type":"value",
+                "value": 680,
+                "correct": true,
+                "feedback": "Correct"
+            },
+            {
+                "type": "range",
+                "range": [ -100000000, 100000000], 
+                "correct": false,
+                "feedback": "Hint: denovo_qval.0.05.out"
+            }
+        ]
+    }
+]

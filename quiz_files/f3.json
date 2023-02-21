@@ -1,0 +1,14 @@
+[
+    {
+        "front": "Nextflow",
+        "back": "Nextflow is a reactive workflow framework and a programming DSL (Nextflow defaults to DSL 2 if no version is specified explicitly) that eases the writing of data-intensive computational pipelines."
+    },
+    {
+        "front": "nf-core",
+        "back": "nf-core is a community-led project to develop a set of best-practice pipelines built using Nextflow workflow management system."
+    },
+    {
+        "front": "nf-core/methylseq",
+        "back": "nf-core/methylseq is a bioinformatics analysis pipeline used for Methylation (Bisulfite) sequencing data. It pre-processes raw data from FastQ inputs, aligns the reads and performs extensive quality-control on the results."
+    }
+]

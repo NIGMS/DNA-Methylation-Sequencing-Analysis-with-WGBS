@@ -1,0 +1,10 @@
+[
+    {
+        "front": "metilene",
+        "back": "metilene is a software tool to annotate differentally methylated regions (DMRs) and differentially methylated CpG sites (DMCs) from Methyl-seq data."
+    },
+    {
+        "front": "DMRs",
+        "back": "Differentially methylated regions. Regions that exhibit consistently different DNA methylation levels between sample groups (for example, cases versus controls). DMRs can be as small as a single C or as large as an entire gene locus, depending on the biological question of interest"
+    }
+]

@@ -1,0 +1,54 @@
+[
+	{
+        "question": "In a bisulfite treated read alignment example, what is the methylation call for Unmethylated C in CHH context? (hint: Output alignment)",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "X",
+                "correct": false,
+                "feedback": "Incorrect"
+            },
+            {
+                "answer": "z",
+                "correct": false,
+                "feedback": "Incorrect"
+            },
+            {
+                "answer": "h",
+                "correct": true,
+                "feedback": "Correct"
+            },
+            {
+                "answer": "H",
+                "correct": false,
+                "feedback": "Incorrect"
+            }
+        ]
+    },
+    {
+        "question": "File format can NOT be viewed in IGV:",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": ".bam",
+                "correct": false,
+                "feedback": "Incorrect"
+            },
+            {
+                "answer": ".bed",
+                "correct": false,
+                "feedback": "Incorrect"
+            },
+            {
+                "answer": ".fastq",
+                "correct": true,
+                "feedback": "Correct"
+            },
+            {
+                "answer": ".bedgraph",
+                "correct": false,
+                "feedback": "Incorrect"
+            }
+        ]
+    }
+]
