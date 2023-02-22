@@ -25,7 +25,9 @@ This module will show you how to run a whole genome bisulfite sequencing (WGBS) 
 - **Notebook 3** (`tutorial_3-methylseq1.ipynb`): run the existing workflow methylseq developed by nf-core. This workflow is built using [Nextflow](https://www.nextflow.io/docs/latest/index.html), and is highly automated and portable.  
 (Running time: ~50 mins)
 - **Notebook 4** (`tutorial_4-methylseq2.ipynb`): run  the nf-core/methylseq workflow using Google Life Sciences API, which enables the workflows to use highly scalable and compliant infrastructure in the Google Cloud Platform.
-(Running time: ~3 hrs
+(Running time: ~3 hrs)
+
+This whole module will only cost you about $2.00 to run, assuming you tear down all resources upon completion. 
 
 <img src="images/Workflow_diagram.png" width="1000" />
 
