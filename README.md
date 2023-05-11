@@ -3,14 +3,14 @@
 
 ## **Contents**
 
-+ [Overview](#Overview)
-+ [Background](#Background)
-+ [Before Starting](#Before-Starting)
-+ [Getting Started](#Getting-Started)
-+ [Software Requirements](#Software-Requirements)
-+ [Architecture Design](#Architecture-Design)
-+ [Data](#Data)
-+ [Funding](#Funding)
++ [Overview](#overview)
++ [Background](#background)
++ [Before Starting](#before-starting)
++ [Getting Started](#getting-started)
++ [Software Requirements](#software-requirements)
++ [Architecture Design](#architecture-design)
++ [Data](#data)
++ [Funding](#funding)
 
 ## **Overview**
 
@@ -31,19 +31,19 @@ This whole module will only cost you about $2.00 to run, assuming you tear down 
 
 Watch this [Introduction Video](https://youtu.be/S3ZIhO8k4ag) to learn more about the module.
 
-<img src="images/Workflow_diagram.png" width="1000" />
+![](images/Workflow_diagram.png)
 
 ## **Background**
 
 As one of the most abundant and well-studied epigenetic modifications, DNA methylation plays an essential role in normal cell development and has various effects on transcription, genome stability, and DNA packaging within cells.
 - **DNA Methylation** refers to the addition of a methyl (CH3) group to the 5th carbon on a cytosine ring giving rise to 5-methylcytosine (5mC). The whole process is mediated by DNA methyltransferases (DNMTs):
-> <img src="images/0_DNA_methyl.png" width="500" align="center"/>
+![](images/0_DNA_methyl.png)
 - DNA methylation primarily happens at **CpG** sites, where a cytosine is followed by a guanine in the 5’-3’ direction (5’-Cytosine-phosphate-Guanine-3’). And DNA regions have a high frequency of CpG sites are called *CpG island*.  Methylation can also occur at CHG and CHH sites, where "H" is A, C, or T.
 - **Function.** DNA methylation effects on transcriptional regulation differ depending on the location of the CpG site (intragenic vs. promoter region vs enhancer). For example, there are extensive differences in DNA methylation patterning between normal and cancer cells across the entire genome. And this change in distribution collectively causes a suppression of tumor suppressor genes and concomitant increase in the expression of oncogenes, which drive tumorigenesis ([Skvortsova K, et al. 2019](https://portlandpress.com/essaysbiochem/article/63/6/797/221497/The-DNA-methylation-landscape-in-cancer)).
 
 To measure DNA methylation, WGBS was developed with the next-generation sequencing technologies (NGS) and bisulfited-based technologies. The basic steps of WGBS include DNA extraction, bisulfite conversion, library preparation, sequencing, and bioinformatics analysis.
 - A **bisulfite treatment** converts cytosines into uracils, but leaves methylated cytosines unchanged:
-> <img src="images/0_BS.png" width="900" align="center"/>
+![](images/0_BS.png)
 - Subsequently, methylation can be measured at single base pair resolution by quantifying the C-C positions reference-bisulfite treatment (methylated site) versus the positions that changed C-T reference-bisulfite treatment (unmethylated site).
 - In this learning module, our focus is to process and analyze the sequencing data generated from WGBS experiments. The major steps include quality control, alignment, methylation calling and differentially methylated region detection. We'll introduce two workflows and show how to run them on GCP, with detailed explanation how each step works in these workflows.
 
@@ -96,7 +96,7 @@ Before creating a notebook, click `Advanced Options` since you need to edit the 
 - Edit the Permissions section by **unclicking** 'Use Compute Engine default service account' and enter your service account email.
 - then click 'Create'
 
-<img src="images/4_create_notebook.png" width="900">
+![](images/4_create_notebook.png)
 
 Vertex AI Workbench automatically starts the instance. It may take a few minutes to finish. When the instance is ready to use, Vertex AI Workbench activates an **Open JupyterLab link**:
 
@@ -123,12 +123,12 @@ All our tutorial workflows are in [Jupyter notebook](https://docs.jupyter.org/en
 
 Some 'cells' of code take longer for the computer to process than others. You will know a cell is running when a cell has an asterisk next to it **[*]**. When the cell finishes running, that asterisk will be replaced with a number which represents the order that cell was run in.
 
-You can now explore the tutorials by running the code in each, from top to bottom. Look at the [Overview](#Overview) section for a short description of each tutorial.
+You can now explore the tutorials by running the code in each, from top to bottom. Look at the [Overview](#overview) section for a short description of each tutorial.
 
 ### Stopping Your Virtual Machine
 
 When you are finished running code, you can turn off your virtual machine to prevent unneeded billing or resource use by checking your notebook and clicking the 'Stop' button.
-> <img src="images/0_stop_notebook.png" width="800">
+![](images/0_stop_notebook.png)
 
 ## **Software Requirements**
 
@@ -161,7 +161,7 @@ For **Notebook 1 and 2**, you can install all necessary requirements using the i
 - MultiQC v1.13
 - Python 3.7.12
 
-For **Notebook 3 and 4**, you will need to install Java and Nextflow in your notebook. Other software listed are included in the  nfcore/methylseq pipeline, installation is not required, since they will be downloaded along with the pipeline.
+For **Notebook 3 and 4**, you will need to install Java and Nextflow in your notebook. Other software listed are included in the nfcore/methylseq pipeline, installation is not required, since they will be downloaded along with the pipeline.
 - openjdk	17.0.3-internal
 - Nextflow	v22.04.5
 - nf-core/methylseq	v1.6.1
@@ -186,7 +186,7 @@ For **Notebook 3 and 4**, you will need to install Java and Nextflow in your not
 
 ## **Architecture Design**
 
-<img src="images/0_architecture_design.png" width="1000"/>
+![](images/0_architecture_design.png)
 
 ## **Data**
 
@@ -198,10 +198,10 @@ For **Notebook 3 and 4**, you will need to install Java and Nextflow in your not
 
 Funded by NIH/NIGMS P20GM103466.
 
-## **License for Data**<a name="LIC"></a>
+## **License for Data**<
 
 Text and materials are licensed under a Creative Commons CC-BY-NC-SA license. The license allows you to copy, remix and redistribute any of our publicly available materials, under the condition that you attribute the work (details in the license) and do not make profits from it. More information is available [here](https://tilburgsciencehub.com/about/#license).
 
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />
+![Creative commons license](https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png)
 
-This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/)
