@@ -198,7 +198,7 @@ For **Notebook 3 and 4**, you will need to install Java and Nextflow in your not
 
 Funded by NIH/NIGMS P20GM103466.
 
-## **License for Data**<
+## **License for Data**
 
 Text and materials are licensed under a Creative Commons CC-BY-NC-SA license. The license allows you to copy, remix and redistribute any of our publicly available materials, under the condition that you attribute the work (details in the license) and do not make profits from it. More information is available [here](https://tilburgsciencehub.com/about/#license).
 
