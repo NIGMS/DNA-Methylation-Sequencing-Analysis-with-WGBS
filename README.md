@@ -31,19 +31,19 @@ This whole module will only cost you about $2.00 to run, assuming you tear down 
 
 Watch this [Introduction Video](https://youtu.be/S3ZIhO8k4ag) to learn more about the module.
 
-![](images/Workflow_diagram.png)
+![workflow diagram](images/Workflow_diagram.png)
 
 ## **Background**
 
 As one of the most abundant and well-studied epigenetic modifications, DNA methylation plays an essential role in normal cell development and has various effects on transcription, genome stability, and DNA packaging within cells.
 - **DNA Methylation** refers to the addition of a methyl (CH3) group to the 5th carbon on a cytosine ring giving rise to 5-methylcytosine (5mC). The whole process is mediated by DNA methyltransferases (DNMTs):
-![](images/0_DNA_methyl.png)
+![dna methylation](images/0_DNA_methyl.png)
 - DNA methylation primarily happens at **CpG** sites, where a cytosine is followed by a guanine in the 5’-3’ direction (5’-Cytosine-phosphate-Guanine-3’). And DNA regions have a high frequency of CpG sites are called *CpG island*.  Methylation can also occur at CHG and CHH sites, where "H" is A, C, or T.
 - **Function.** DNA methylation effects on transcriptional regulation differ depending on the location of the CpG site (intragenic vs. promoter region vs enhancer). For example, there are extensive differences in DNA methylation patterning between normal and cancer cells across the entire genome. And this change in distribution collectively causes a suppression of tumor suppressor genes and concomitant increase in the expression of oncogenes, which drive tumorigenesis ([Skvortsova K, et al. 2019](https://portlandpress.com/essaysbiochem/article/63/6/797/221497/The-DNA-methylation-landscape-in-cancer)).
 
 To measure DNA methylation, WGBS was developed with the next-generation sequencing technologies (NGS) and bisulfited-based technologies. The basic steps of WGBS include DNA extraction, bisulfite conversion, library preparation, sequencing, and bioinformatics analysis.
 - A **bisulfite treatment** converts cytosines into uracils, but leaves methylated cytosines unchanged:
-![](images/0_BS.png)
+![bisulfite treatment](images/0_BS.png)
 - Subsequently, methylation can be measured at single base pair resolution by quantifying the C-C positions reference-bisulfite treatment (methylated site) versus the positions that changed C-T reference-bisulfite treatment (unmethylated site).
 - In this learning module, our focus is to process and analyze the sequencing data generated from WGBS experiments. The major steps include quality control, alignment, methylation calling and differentially methylated region detection. We'll introduce two workflows and show how to run them on GCP, with detailed explanation how each step works in these workflows.
 
@@ -67,13 +67,13 @@ This repository contains several notebook files which serve as bioinformatics WG
 
 Before starting, make sure you have a Google account and have access to a Google Cloud Platform project. Once you have these, you can begin by first navigating to **https://console.cloud.google.com/** and logging in with your credentials. Then, in the top-left of the screen, navigate to `select a project`, and choose the project you would like to work on:
 
-![](images/0_gcp_start.png)
+![gcp startup](images/0_gcp_start.png)
 
 ### Navigating to the Vertex AI Workbench
 
 Once a project has been selected, we can navigate to the Vertex AI Workbench, this is where we can set up the virtual machine (Jupyter notebook). To get there, select the navigation menu, and navigate to `Vertex AI` under the Artificial Intelligence section. Within the `Vertex AI` submenu, select **Workbench**:
 
-![](images/0_vertex_AI.png)
+![vertex ai](images/0_vertex_AI.png)
 
 ### Create a Vertex AI notebook
 
@@ -81,30 +81,30 @@ Vertex AI Workbench offers a `managed notebooks` option with built-in integratio
 
 Within the Workbench screen, select `USER-MANAGED NOTEBOOKS` and then create a new notebook by clicking `+ NEW NOTEBOOK` above:
 
-![](images/0_user_managed_notebook.png)
+![start a user managed notebook](images/0_user_managed_notebook.png)
 
 Select an instance type `Python 3`,and then click **Create**.
 
-![](images/0_new_notebook.png)
+![create a new notebook](images/0_new_notebook.png)
 
 You can then choose a name for your virtual machine, you can name it whatever you like, and preferably choose a server location closest to you. A default virtual machine with four vCPUS and 15GB RAM will be created.
 
-![](images/0_new_notebook2.png)
+![new notebook](images/0_new_notebook2.png)
 
 Before creating a notebook, click `Advanced Options` since you need to edit the permissions to utilize the **Nextflow service account**.
 - Using the 'IAM & Admin' menu on the left, click 'Service Accounts' (if you aren't there already), locate your Nextflow service account, and copy the entire email name
 - Edit the Permissions section by **unclicking** 'Use Compute Engine default service account' and enter your service account email.
 - then click 'Create'
 
-![](images/4_create_notebook.png)
+![create a new notebook](images/4_create_notebook.png)
 
 Vertex AI Workbench automatically starts the instance. It may take a few minutes to finish. When the instance is ready to use, Vertex AI Workbench activates an **Open JupyterLab link**:
 
-![](images/0_open_notebook.png)
+![open the notebook](images/0_open_notebook.png)
 
 Start a new notebook by clicking the Python 3 Notebook icon:
 
-![](images/0_open_notebook2.png)
+![start a new notebook](images/0_open_notebook2.png)
 
 
 ### Download the tutorials
@@ -115,7 +115,7 @@ Next you can type in the link of repository: https://github.com/NIGMS/MethylSeqU
 
 This should download our repository, and the tutorial files inside, into a folder called `MethylSeqUH`. Double-click this folder now. Inside you will find all our tutorial files, which you can double-click and run.
 
-![](images/0_clone_a_repository.png)
+![clone a repository](images/0_clone_a_repository.png)
 
 ### Running Tutorial Files
 
@@ -128,7 +128,7 @@ You can now explore the tutorials by running the code in each, from top to botto
 ### Stopping Your Virtual Machine
 
 When you are finished running code, you can turn off your virtual machine to prevent unneeded billing or resource use by checking your notebook and clicking the 'Stop' button.
-![](images/0_stop_notebook.png)
+![stop a notebook](images/0_stop_notebook.png)
 
 ## **Software Requirements**
 
@@ -186,7 +186,7 @@ For **Notebook 3 and 4**, you will need to install Java and Nextflow in your not
 
 ## **Architecture Design**
 
-![](images/0_architecture_design.png)
+![technical infrastructure diagram](images/0_architecture_design.png)
 
 ## **Data**
 
