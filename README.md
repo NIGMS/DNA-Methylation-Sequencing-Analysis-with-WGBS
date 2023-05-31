@@ -87,7 +87,7 @@ Select an instance type `Python 3`,and then click **Create**.
 
 ![create a new notebook](images/0_new_notebook.png)
 
-You can then choose a name for your virtual machine, you can name it whatever you like, and preferably choose a server location closest to you. A default virtual machine with four vCPUS and 15GB RAM will be created.
+You can then choose a name for your virtual machine, you can name it whatever you like, and preferably choose a server location closest to you. A default virtual machine with 4 vCPUS and 15GB RAM will be created.
 
 ![new notebook](images/0_new_notebook2.png)
 
