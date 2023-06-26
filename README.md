@@ -18,7 +18,7 @@ Image adapted from https://doi.org/10.3389/fgene.2011.00106
 
 ## **Overview**
 
-This module will show you how to run a whole genome bisulfite sequencing (WGBS) data analysis workflow on Google Cloud Platform (GCP). In addition to the overview given in this README you will find four Jupyter notebooks that help you understand the basics of the workflow to running large dataset using Google Life Sciences API in the cloud. To use this module, clone the parent repository, `git clone https://github.com/NIGMS/MethylSeqUH` and then navigate to the directory for this project. You will then see the following notebooks in your environment:
+This module will show you how to run a whole genome bisulfite sequencing (WGBS) data analysis workflow on Google Cloud Platform (GCP). In addition to the overview given in this README you will find four Jupyter notebooks that help you understand the basics of the workflow to running large dataset using Google Life Sciences API in the cloud. To use this module, clone the parent repository, `git clone https://github.com/NIGMS/DNA-Methylation-Sequencing-Analysis-with-WGBS.git` and then navigate to the directory for this project. You will then see the following notebooks in your environment:
 
 - **Introduction of DNA methylation** (`tutorial_0-introduction.pdf`): more background of DNA methylation and WGBS data analysis.
 
