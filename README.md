@@ -83,20 +83,23 @@ Once a project has been selected, we can navigate to the Vertex AI Workbench, th
 
 Vertex AI Workbench offers a `managed notebooks` option with built-in integrations that help you to set up an end-to-end notebook-based production environment. For users who need full control over their environment, Vertex AI Workbench provides a `user-managed notebooks` option.
 
-Within the Workbench screen, select `USER-MANAGED NOTEBOOKS` and then create a new notebook by clicking `+ NEW NOTEBOOK` above:
+Within the Workbench screen, select `USER-MANAGED NOTEBOOKS` and then create a new notebook by clicking `+ Create New` above:
 
-![start a user managed notebook](images/0_user_managed_notebook.png)
+![Create New user managed notebook](images/Create_new_notebook.png)
 
-Select an instance type `Python 3`,and then click **Create**.
+In the new instance window, scroll down and select Advanced Options.
 
-![create a new notebook](images/0_new_notebook.png)
+![Select Advanced Options](images/Advanced_options.png)
 
-You can then choose a name for your virtual machine, you can name it whatever you like, and preferably choose a server location closest to you. A default virtual machine with 4 vCPUS and 15GB RAM will be created.
+In the Environment tab, Select the appropriate operating system and environment. Make sure to click the Enable Idle Shutdown button in the Environment tab as shown in the screenshot below. Finally, select the appropriate hardware in the Machine type tab.
 
-![new notebook](images/0_new_notebook2.png)
+![Enable Idle Shutdown](images/Enable_auto_shutdown.png)
 
-Before creating a notebook, click `Advanced Options` since you need to edit the permissions to utilize the **Nextflow service account**.
-- Using the 'IAM & Admin' menu on the left, click 'Service Accounts' (if you aren't there already), locate your Nextflow service account, and copy the entire email name
+Select an instance type `Python 3` in the Environment tab. You can choose a name for your virtual machine, you can name it whatever you like, and preferably choose a server location closest to you. A default virtual machine with 4 vCPUS and 15GB RAM will be created.
+
+
+Before creating a notebook, you need to edit the permissions to utilize the **Nextflow service account**.
+- Using the 'IAM & Admin' tab on the left, click 'Service Accounts' (if you aren't there already), locate your Nextflow service account, and copy the entire email name
 - Edit the Permissions section by **unclicking** 'Use Compute Engine default service account' and enter your service account email.
 - then click 'Create'
 
