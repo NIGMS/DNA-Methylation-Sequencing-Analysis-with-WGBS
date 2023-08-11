@@ -91,7 +91,7 @@ In the new instance window, scroll down and select Advanced Options.
 
 ![Select Advanced Options](images/Advanced_options.png)
 
-In the Environment tab, Select the appropriate operating system and environment. Make sure to click the Enable Idle Shutdown button in the Environment tab as shown in the screenshot below. Finally, select the appropriate hardware in the Machine type tab.
+In the Environment tab, Select the appropriate operating system and environment. Make sure to click the Enable Idle Shutdown button in the Machine type tab as shown in the screenshot below. Finally, select the appropriate hardware in the Machine type tab.
 
 ![Enable Idle Shutdown](images/Enable_auto_shutdown.png)
 
