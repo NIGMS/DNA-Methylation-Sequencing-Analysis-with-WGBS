@@ -83,7 +83,7 @@ Once a project has been selected, we can navigate to the Vertex AI Workbench, th
 
 Vertex AI Workbench offers a `managed notebooks` option with built-in integrations that help you to set up an end-to-end notebook-based production environment. For users who need full control over their environment, Vertex AI Workbench provides a `user-managed notebooks` option.
 
-Within the Workbench screen, select `USER-MANAGED NOTEBOOKS` and then create a new notebook by clicking `+ Create New` above:
+Within the Workbench screen, select `USER-MANAGED NOTEBOOKS` and then create a new notebook by clicking **+ Create New** above:
 
 ![Create New user managed notebook](images/Create_new_notebook.png)
 
@@ -91,7 +91,7 @@ In the new instance window, scroll down and select Advanced Options.
 
 ![Select Advanced Options](images/Advanced_options.png)
 
-In the Environment tab, Select the appropriate operating system and environment. Make sure to click the Enable Idle Shutdown button in the Machine type tab as shown in the screenshot below. Finally, select the appropriate hardware in the Machine type tab.
+In the Environment tab, Select the appropriate operating system and environment. Make sure to click the **Enable Idle Shutdown** button in the Machine type tab as shown in the screenshot below. Finally, select the appropriate hardware in the Machine type tab.
 
 ![Enable Idle Shutdown](images/Enable_auto_shutdown.png)
 
@@ -99,9 +99,9 @@ Select an instance type `Python 3` in the Environment tab. You can choose a name
 
 
 Before creating a notebook, you need to edit the permissions to utilize the **Nextflow service account**.
-- Using the 'IAM & Admin' tab on the left, click 'Service Accounts' (if you aren't there already), locate your Nextflow service account, and copy the entire email name
-- Edit the Permissions section by **unclicking** 'Use Compute Engine default service account' and enter your service account email.
-- then click 'Create'
+- Using the 'IAM & Admin' tab on the left, click **Service Accounts** (if you aren't there already), locate your Nextflow service account, and copy the entire email name
+- Edit the Permissions section by _unclicking_ **Use Compute Engine default service account** and enter your service account email.
+- then click **Create**
 
 ![create a new notebook](images/4_create_notebook.png)
 
@@ -109,7 +109,7 @@ Vertex AI Workbench automatically starts the instance. It may take a few minutes
 
 ![open the notebook](images/0_open_notebook.png)
 
-Start a new notebook by clicking the Python 3 Notebook icon:
+Start a new notebook by clicking the **Python 3 Notebook** icon:
 
 ![start a new notebook](images/0_open_notebook2.png)
 
@@ -118,7 +118,7 @@ Start a new notebook by clicking the Python 3 Notebook icon:
 
 Now that you have created your virtual machine, and are in the JupyterLab screen, you can run our tutorial files. But first you will need to download them.
 The easiest way to do this would be to clone the NIGMS repository into your Vertex AI notebook. This can be done by using the `Git` menu in JupyterLab, and selecting the clone option. 
-Next you can type in the link of repository: https://github.com/NIGMS/MethylSeqUH and click `Clone`. 
+Next you can type in the link of repository: https://github.com/NIGMS/MethylSeqUH and click **Clone**. 
 
 This should download our repository, and the tutorial files inside, into a folder called `MethylSeqUH`. Double-click this folder now. Inside you will find all our tutorial files, which you can double-click and run.
 
@@ -134,7 +134,7 @@ You can now explore the tutorials by running the code in each, from top to botto
 
 ### Stopping Your Virtual Machine
 
-When you are finished running code, you can turn off your virtual machine to prevent unneeded billing or resource use by checking your notebook and clicking the 'Stop' button.
+When you are finished running code, you can turn off your virtual machine to prevent unneeded billing or resource use by checking your notebook and clicking the **Stop** button.
 ![stop a notebook](images/0_stop_notebook.png)
 
 ## **Software Requirements**
