@@ -67,59 +67,18 @@ More detailed instructions of the above steps can be found [here](docs/Before_be
 
 This repository contains several notebook files which serve as bioinformatics WGBS workflow tutorials. To view these notebooks on GCP, the following steps will guide you through setting up a virtual machine on Google Cloud Platform, downloading our tutorial files, and running those files.
 
-### Navigate to GCP and select a project
+### Optional: Creating a Nextflow Service Account
+If you are using Nextflow outside of NIH CloudLab you must set up a service account and add your service account to your notebook permissions before creating the notebook. Follow section 2 of the accompanying [How To document](https://github.com/NIGMS/NIGMS-Sandbox/blob/main/docs/HowToCreateNextflowServiceAccount.md) for instructions. If you are executing this tutorial with an NIH CloudLab account your default Compute Engine service account will have all required IAM roles to run the nextflow portion.
 
-Before starting, make sure you have a Google account and have access to a Google Cloud Platform project. Once you have these, you can begin by first navigating to **https://console.cloud.google.com/** and logging in with your credentials. Then, in the top-left of the screen, navigate to `select a project`, and choose the project you would like to work on:
+### Creating a user managed notebook 
 
-![gcp startup](images/0_gcp_start.png)
-
-### Navigating to the Vertex AI Workbench
-
-Once a project has been selected, we can navigate to the Vertex AI Workbench, this is where we can set up the virtual machine (Jupyter notebook). To get there, select the navigation menu, and navigate to `Vertex AI` under the Artificial Intelligence section. Within the `Vertex AI` submenu, select **Workbench**:
-
-![vertex ai](images/0_vertex_AI.png)
-
-### Create a Vertex AI notebook
-
-Vertex AI Workbench offers a `managed notebooks` option with built-in integrations that help you to set up an end-to-end notebook-based production environment. For users who need full control over their environment, Vertex AI Workbench provides a `user-managed notebooks` option.
-
-Within the Workbench screen, select `USER-MANAGED NOTEBOOKS` and then create a new notebook by clicking `+ NEW NOTEBOOK` above:
-
-![start a user managed notebook](images/0_user_managed_notebook.png)
-
-Select an instance type `Python 3`,and then click **Create**.
-
-![create a new notebook](images/0_new_notebook.png)
-
-You can then choose a name for your virtual machine, you can name it whatever you like, and preferably choose a server location closest to you. A default virtual machine with 4 vCPUS and 15GB RAM will be created.
-
-![new notebook](images/0_new_notebook2.png)
-
-Before creating a notebook, click `Advanced Options` since you need to edit the permissions to utilize the **Nextflow service account**.
-- Using the 'IAM & Admin' menu on the left, click 'Service Accounts' (if you aren't there already), locate your Nextflow service account, and copy the entire email name
-- Edit the Permissions section by **unclicking** 'Use Compute Engine default service account' and enter your service account email.
-- then click 'Create'
-
-![create a new notebook](images/4_create_notebook.png)
-
-Vertex AI Workbench automatically starts the instance. It may take a few minutes to finish. When the instance is ready to use, Vertex AI Workbench activates an **Open JupyterLab link**:
-
-![open the notebook](images/0_open_notebook.png)
-
-Start a new notebook by clicking the Python 3 Notebook icon:
-
-![start a new notebook](images/0_open_notebook2.png)
-
+Follow the steps highlighted [here](https://github.com/STRIDES/NIHCloudLabGCP/blob/main/docs/vertexai.md) to create a new user-managed notebook in Vertex AI. Follow steps 1-8 and be especially careful to enable idle shutdown as highlighted in step 7. For this module you should select Debian 11 and Python 3 in the Environment tab in step 5. In step 6 in the Machine type tab, select n1-standard-4 from the dropdown box.
 
 ### Download the tutorials
 
-Now that you have created your virtual machine, and are in the JupyterLab screen, you can run our tutorial files. But first you will need to download them.
-The easiest way to do this would be to clone the NIGMS repository into your Vertex AI notebook. This can be done by using the `Git` menu in JupyterLab, and selecting the clone option. 
-Next you can type in the link of repository: https://github.com/NIGMS/MethylSeqUH and click `Clone`. 
+To clone this repository, use the Git command `git clone https://github.com/NIGMS/MethylSeqUH.git` in the dropdown menu option in Jupyter notebook. Please make sure you only enter the link for the repository that you want to clone. There are other bioinformatics related learning modules available in the [NIGMS Repository](https://github.com/NIGMS).
 
 This should download our repository, and the tutorial files inside, into a folder called `MethylSeqUH`. Double-click this folder now. Inside you will find all our tutorial files, which you can double-click and run.
-
-![clone a repository](images/0_clone_a_repository.png)
 
 ### Running Tutorial Files
 
@@ -131,8 +90,7 @@ You can now explore the tutorials by running the code in each, from top to botto
 
 ### Stopping Your Virtual Machine
 
-When you are finished running code, you can turn off your virtual machine to prevent unneeded billing or resource use by checking your notebook and clicking the 'Stop' button.
-![stop a notebook](images/0_stop_notebook.png)
+When you are finished running code, you can turn off your virtual machine to prevent unneeded billing or resource use by checking your notebook and clicking the **Stop** button.
 
 ## **Software Requirements**
 
