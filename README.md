@@ -18,7 +18,7 @@ Image adapted from https://doi.org/10.3389/fgene.2011.00106
 
 ## **Overview**
 
-This module will show you how to run a whole genome bisulfite sequencing (WGBS) data analysis workflow on Google Cloud Platform (GCP). In addition to the overview given in this README you will find four Jupyter notebooks that help you understand the basics of the workflow to running large dataset using Google Life Sciences API in the cloud. To use this module, clone the parent repository, `git clone https://github.com/NIGMS/DNA-Methylation-Sequencing-Analysis-with-WGBS.git` and then navigate to the directory for this project. You will then see the following notebooks in your environment:
+This module will show you how to run a whole genome bisulfite sequencing (WGBS) data analysis workflow on Google Cloud Platform (GCP). In addition to the overview given in this README you will find four Jupyter notebooks that help you understand the basics of the workflow to running large dataset using Google Batch in the cloud. To use this module, clone the parent repository, `git clone https://github.com/NIGMS/DNA-Methylation-Sequencing-Analysis-with-WGBS.git` and then navigate to the directory for this project. You will then see the following notebooks in your environment:
 
 - **Introduction of DNA methylation** (`tutorial_0-introduction.pdf`): more background of DNA methylation and WGBS data analysis.
 
@@ -28,7 +28,7 @@ This module will show you how to run a whole genome bisulfite sequencing (WGBS) 
 (Running time: < 3 mins)
 - **Notebook 3** (`tutorial_3-methylseq1.ipynb`): run the existing workflow methylseq developed by nf-core. This workflow is built using [Nextflow](https://www.nextflow.io/docs/latest/index.html), and is highly automated and portable.  
 (Running time: ~50 mins)
-- **Notebook 4** (`tutorial_4-methylseq2.ipynb`): run  the nf-core/methylseq workflow using Google Life Sciences API, which enables the workflows to use highly scalable and compliant infrastructure in the Google Cloud Platform.
+- **Notebook 4** (`tutorial_4-methylseq2.ipynb`): run  the nf-core/methylseq workflow using Google Batch, which enables the workflows to use highly scalable and compliant infrastructure in the Google Cloud Platform.
 (Running time: ~3 hrs)
 
 This whole module will only cost you about $2.00 to run, assuming you tear down all resources upon completion.
@@ -57,7 +57,7 @@ These tutorials were designed to be used on Google Cloud Platforms (GCP), with t
 - Set up a Google Cloud account
 - Create a project
 - Enable billing
-- Enable APIs (Compute Engine API, Cloud Storage API, Cloud Life Sciences API)
+- Enable APIs (Compute Engine API, Cloud Storage API, Google Batch)
 - Create a Nextflow service account (only needed for tutorial 4)
 - Create a Cloud Storage bucket ([details](https://cloud.google.com/storage/docs/creating-buckets))
 
