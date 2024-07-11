@@ -21,7 +21,6 @@ jobs:
         with:
           python-version: '3.12'
           cache: 'pip'
-        working-directory: .github/workflows
 
       - name: Install requirements.txt
         run: |
