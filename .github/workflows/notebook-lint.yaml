@@ -27,7 +27,7 @@ jobs:
           python3 -m pip install --upgrade pip
           pip3 install nbformat
 
-      - name: Generate reports
+      - name: Notebook Linting
         working-directory: .github/workflows
         run: |
           python3 lint.py
