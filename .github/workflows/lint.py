@@ -34,6 +34,8 @@ def delete_checkpoints_dirs(root_dir):
                 # Delete the directory
                 shutil.rmtree(dir_to_delete)
                 print(f'Deleted {dir_to_delete}')
+                print('Consider adding .ipynb_checkpoints to your .gitignore file!')
+
 
 if __name__ == "__main__":
     # Change this to the directory containing your notebooks
