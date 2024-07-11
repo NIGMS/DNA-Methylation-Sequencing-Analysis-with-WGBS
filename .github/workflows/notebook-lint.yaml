@@ -8,8 +8,8 @@ permissions:
   id-token: write
 
 jobs:
-  gather_stats:
-    name: 'Gather Stats'
+  lint:
+    name: 'Linting'
     runs-on: ubuntu-latest
 
     steps:
