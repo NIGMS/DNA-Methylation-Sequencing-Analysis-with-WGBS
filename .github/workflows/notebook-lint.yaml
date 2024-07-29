@@ -1,8 +1,6 @@
 name: 'Lint Notebook'
 on:
   push:
-    branches:
-      - dev/lint
 permissions:
   contents: write
   id-token: write
