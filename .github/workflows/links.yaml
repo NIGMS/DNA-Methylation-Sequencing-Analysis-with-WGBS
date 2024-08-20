@@ -1,0 +1,22 @@
+name: Link Checker
+
+on:
+  push:
+    - **
+  workflow_dispatch:
+    inputs:
+      start:
+        type: bool
+        required: false
+
+jobs:
+  link-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Run Link Checker
+        uses: mr8lu/link-validator@v1
+        with:
+          directory: '.'
