@@ -1,13 +1,6 @@
 name: Link Checker
 
-on:
-  push:
-    - **
-  workflow_dispatch:
-    inputs:
-      start:
-        type: bool
-        required: false
+on: [push, pull_request]
 
 jobs:
   link-check:
