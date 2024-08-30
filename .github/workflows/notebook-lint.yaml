@@ -1,5 +1,10 @@
 name: 'Lint Notebook'
 on:
+  workflow_call:
+    inputs:
+      directory:
+        required: false
+        type: string
   push:
 permissions:
   contents: write
