@@ -1,10 +1,5 @@
 name: 'Lint Notebook'
 on:
-  workflow_call:
-    inputs:
-      directory:
-        required: false
-        type: string
   push:
 permissions:
   contents: write
@@ -13,31 +8,6 @@ permissions:
 jobs:
   lint:
     name: 'Linting'
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-          cache: 'pip'
-
-      - name: Install requirements.txt
-        run: |
-          python3 -m pip install --upgrade pip
-          pip3 install nbformat
-
-      - name: Notebook Linting
-        working-directory: .github/workflows
-        run: |
-          python3 lint.py
-
-      - name: Commit changes
-        uses: EndBug/add-and-commit@v9
-        with:
-          author_name: github-action
-          author_email: cbiit-github-action@github.com
-          message: 'Github Action: Refresh stats'
+    uses: NIGMS/NIGMS-Sandbox-Repository-Template/.github/workflows/notebook-lint.yaml@reusable_workflow
+    with:
+      directory: .
