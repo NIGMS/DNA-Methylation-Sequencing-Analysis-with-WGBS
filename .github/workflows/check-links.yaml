@@ -1,34 +1,11 @@
 name: 'Check Links'
 on:
-  workflow_call:
-    inputs:
-      directory:
-        required: false
-        type: string
-      repo_link_ignore_list:
-        required: true
-        type: string
-    secrets:
-      PAT:
-        required: false
   push:
   pull_request:
 
 jobs:
   link_check:
     name: 'Link Check'
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Link Check
-        with:
-          link_ignore_list: ${{ inputs.repo_link_ignore_list }}
-          directory: ${{ inputs.directory }}
-          PAT: ${{ secrets.PAT }}
-        env:
-          LINK_IGNORE_LIST: https://www.sciencedirect.com,https://portlandpress.com
-        run: |
-          python3 .github/workflows/check_links.py
+    uses: NIGMS/NIGMS-Sandbox-Repository-Template/.github/workflows/check-links.yaml@reusable_workflow
+    with:
+      repo_link_ignore_list: ""
