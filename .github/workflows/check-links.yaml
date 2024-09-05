@@ -6,6 +6,6 @@ on:
 jobs:
   link_check:
     name: 'Link Check'
-    uses: NIGMS/NIGMS-Sandbox-Repository-Template/.github/workflows/check-links.yaml@main
+    uses: NIGMS/NIGMS-Sandbox-Repository-Template/.github/workflows/check-links.yaml@reusable_workflow
     with:
       repo_link_ignore_list: ""
