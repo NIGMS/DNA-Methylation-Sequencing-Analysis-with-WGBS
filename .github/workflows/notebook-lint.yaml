@@ -8,6 +8,6 @@ permissions:
 jobs:
   lint:
     name: 'Linting'
-    uses: NIGMS/NIGMS-Sandbox-Repository-Template/.github/workflows/notebook-lint.yaml@reusable_workflow
+    uses: NIGMS/NIGMS-Sandbox-Repository-Template/.github/workflows/notebook-lint.yaml@main
     with:
       directory: .
