@@ -47,7 +47,7 @@ Alternatively, you can enable each API manually by selecting your project in the
     - Storage Admin
     - Storage Object Admin
 
-Additional information can be found [here](https://github.com/STRIDES/NIHCloudLabGCP#sto).
+Additional information can be found [here](https://cloud.nih.gov/resources/cloudlab/google-cloud-jumpstart/#sto).
 
 ## Create a Nextflow service account <a name="CNSA"></a>
 (Only used in Tutorial 4)
