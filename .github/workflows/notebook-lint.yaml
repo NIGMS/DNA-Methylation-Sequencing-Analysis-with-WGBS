@@ -1,6 +1,7 @@
 name: 'Lint Notebook'
 on:
   push:
+  workflow_dispatch:
 permissions:
   contents: write
   id-token: write
@@ -8,6 +9,6 @@ permissions:
 jobs:
   lint:
     name: 'Linting'
-    uses: NIGMS/NIGMS-Sandbox-Repository-Template/.github/workflows/notebook-lint.yaml@main
+    uses: NIGMS/NIGMS-Sandbox/.github/workflows/notebook-lint.yaml@reusable_workflow
     with:
       directory: .
