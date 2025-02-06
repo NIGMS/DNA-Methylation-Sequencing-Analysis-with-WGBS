@@ -28,7 +28,7 @@ This whole module will only cost you about $2.00 to run, assuming you tear down 
 
 Watch this [Introduction Video](https://youtu.be/S3ZIhO8k4ag) to learn more about the module.
 
-![workflow diagram](images/Workflow_diagram.png)
+![workflow diagram](images/Workflow_diagram_2.png)
 
 ## **Before Starting**
 These tutorials were designed to be used on Google Cloud Platforms (GCP), with the aim of requiring nothing but the files within this GitHub repository. However, you do need to set up your Google account to access GCP and the Vertex AI Workbench to use the notebooks. The steps you need before getting started:
