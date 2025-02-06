@@ -1,4 +1,4 @@
-![course-card](images/Hawaii-course-card-2.png)
+![course-card](./images/Hawaii-course-card-2.png)
 Image adapted from https://doi.org/10.3389/fgene.2011.00106
 
 
