@@ -1,13 +1,8 @@
 ## **Contents**
 
 + [Overview](#overview)
-+ [Background](#background)
-+ [Before Starting](#before-starting)
 + [Getting Started](#getting-started)
-+ [Software Requirements](#software-requirements)
 + [Architecture Design](#architecture-design)
-+ [Data](#data)
-+ [Funding](#funding)
 
 ## **Overview**
 
@@ -30,17 +25,6 @@ Watch this [Introduction Video](https://youtu.be/S3ZIhO8k4ag) to learn more abou
 
 ![workflow diagram](images/Workflow_diagram.png)
 
-## **Before Starting**
-These tutorials were designed to be used on Google Cloud Platforms (GCP), with the aim of requiring nothing but the files within this GitHub repository. However, you do need to set up your Google account to access GCP and the Vertex AI Workbench to use the notebooks. The steps you need before getting started:
-- Set up a Google Cloud account
-- Create a project
-- Enable billing
-- Enable APIs (Compute Engine API, Cloud Storage API, Google Batch)
-- Create a Nextflow service account (only needed for tutorial 4)
-- Create a Cloud Storage bucket ([details](https://cloud.google.com/storage/docs/creating-buckets))
-
-More detailed instructions of the above steps can be found [here](docs/Before_beginning.md). Or you can also refer to [NIH Cloud Lab README](https://github.com/STRIDES/NIHCloudLabGCP) for more instructions.
-
 ## **Getting Started**
 
 This repository contains several notebook files which serve as bioinformatics WGBS workflow tutorials. To view these notebooks on GCP, the following steps will guide you through setting up a virtual machine on Google Cloud Platform, downloading our tutorial files, and running those files.
@@ -50,13 +34,9 @@ If you are using Nextflow outside of NIH CloudLab you must set up a service acco
 
 ### Creating a user managed notebook 
 
-Follow the steps highlighted [here](https://github.com/STRIDES/NIHCloudLabGCP/blob/main/docs/vertexai.md) to create a new user-managed notebook in Vertex AI. Follow steps 1-8 and be especially careful to enable idle shutdown as highlighted in step 7. For this module you should select Debian 11 and Python 3 in the Environment tab in step 5. In step 6 in the Machine type tab, select n1-standard-4 from the dropdown box.
+**1)** Follow the steps highlighted [here](https://github.com/NIGMS/NIGMS-Sandbox/blob/main/docs/HowToCreateAWSSagemakerNotebooks.md) to create a new notebook instance in Amazon SageMaker. Follow steps and be especially careful to enable idle shutdown as highlighted. For this module, in [step 4](https://github.com/NIGMS/NIGMS-Sandbox/blob/main/docs/HowToCreateAWSSagemakerNotebooks.md) in the "Notebook instance type" tab, select ml.m5.xlarge from the dropdown box. Select conda_python3 kernel in [step 8](https://github.com/NIGMS/NIGMS-Sandbox/blob/main/docs/HowToCreateAWSSagemakerNotebooks.md).
 
-### Download the tutorials
-
-To clone this repository, use the Git command `git clone https://github.com/NIGMS/MethylSeqUH.git` in the dropdown menu option in Jupyter notebook. Please make sure you only enter the link for the repository that you want to clone. There are other bioinformatics related learning modules available in the [NIGMS Repository](https://github.com/NIGMS).
-
-This should download our repository, and the tutorial files inside, into a folder called `MethylSeqUH`. Double-click this folder now. Inside you will find all our tutorial files, which you can double-click and run.
+**2)** You will need to download the tutorial files from GitHub. The easiest way to do this would be to clone the repository from NIGMS into your Amazon SageMaker notebook. To clone this repository, use the Git symbole on left menu and then insert the link `git clone https://github.com/NIGMS/DNA-Methylation-Sequencing-Analysis-with-WGBS.git` as it illustrated in [step 7](https://github.com/NIGMS/NIGMS-Sandbox/blob/main/docs/HowToCreateAWSSagemakerNotebooks.md). Please make sure you only enter the link for the repository that you want to clone. There are other bioinformatics related learning modules available in the [NIGMS Repository](https://github.com/NIGMS). This will download our tutorial files into a folder called `DNA-Methylation-Sequencing-Analysis-with-WGBS`.
 
 ### Running Tutorial Files
 
@@ -64,11 +44,9 @@ All our tutorial workflows are in [Jupyter notebook](https://docs.jupyter.org/en
 
 Some 'cells' of code take longer for the computer to process than others. You will know a cell is running when a cell has an asterisk next to it **[*]**. When the cell finishes running, that asterisk will be replaced with a number which represents the order that cell was run in.
 
-You can now explore the tutorials by running the code in each, from top to bottom. Look at the [Overview](#overview) section for a short description of each tutorial.
+### Stopping Your Notebook
 
-### Stopping Your Virtual Machine
-
-When you are finished running code, you can turn off your virtual machine to prevent unneeded billing or resource use by checking your notebook and clicking the **Stop** button.
+Make sure that after you are done with the module, close the tab that appeared when you clicked **OPEN JUPYTERLAB**, then check the box next to the name of the notebook you created in [step 3](https://github.com/NIGMS/NIGMS-Sandbox/blob/main/docs/HowToCreateAWSSagemakerNotebooks.md). Then click on **STOP** at the top of the Workbench menu. Wait and make sure that the icon next to your notebook is grayed out.
 
 ## **Architecture Design**
 
