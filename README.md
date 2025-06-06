@@ -1,9 +1,10 @@
-![course-card](./images/Hawaii-course-card-2.png)
-Image adapted from https://doi.org/10.3389/fgene.2011.00106
-
-
 # University of Hawaiʻi at Mānoa WGBS Module
----------------------------------
+
+<br>
+<p align="center">
+    <img src="images/Hawaii-course-card-2.png" width="400" />
+</p>
+Image adapted from https://doi.org/10.3389/fgene.2011.00106
 
 ## **Contents**
 
